@@ -14,8 +14,40 @@
 
     @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
+    /* -- 
+
     /*------------------------------MAIN STRUCTURE-----------------------------------------------*/
 
     #general {
-        background: ;
+        background: var(--Paleblue);
+        background-image: url(images/pattern-background-mobile.svg);
+        font-size: 1.125em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
+
+    #card {
+        display: grid;
+        grid-template-rows: 220px 1fr;
+        border-radius: 15px;
+        overflow: hidden;
+        width: 45vw;
+        height: 120vh;
+        /*margin: 60px auto;*/
+    }
+
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        background: var(--Verypaleblue);
+        font-family: 'Red Hat Display', sans-serif;
+    }
+
+    #plan {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    /*----------------------------------------CONTENT--------------------------------------------------*/
