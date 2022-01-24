@@ -1,6 +1,13 @@
 /*----------------------------------FOOTER-------------------------------------------------*/
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 0.75em; 
+    font-family: 'Red Hat Display', sans-serif;;
+    text-align: center;
+    color: var(--Darkblue);
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
 
 /*---------------------------------VARIABLES AND ASSETS------------------------------------------*/
 
@@ -10,6 +17,7 @@
         --Verypaleblue: hsl(225, 100%, 98%);
         --Desaturatedblue: hsl(224, 23%, 55%);
         --Darkblue: hsl(223, 47%, 23%);
+        --VeryLightgray: hsl(192, 16%, 94%);
     }
 
     @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
@@ -18,9 +26,11 @@
 
     /*------------------------------MAIN STRUCTURE-----------------------------------------------*/
 
+    #background {
+        background-color: var(--Verypaleblue);
+    }
+
     #general {
-        background: var(--Paleblue);
-        background-image: url(images/pattern-background-mobile.svg);
         font-size: 1.125em;
         display: flex;
         justify-content: center;
@@ -31,16 +41,21 @@
     #card {
         display: grid;
         grid-template-rows: 220px 1fr;
-        border-radius: 15px;
+        border-radius: 20px;
         overflow: hidden;
-        width: 45vw;
-        height: 120vh;
-        /*margin: 60px auto;*/
+        width: 450px;
+        height: 130vh;
+        margin: 60px auto;
+        box-shadow: -1px 22px 44px -25px rgba(31,47,86,0.75);
+        -webkit-box-shadow: -1px 22px 44px -25px rgba(31,47,86,0.75);
+        -moz-box-shadow: -1px 22px 44px -25px rgba(31,47,86,0.75);
     }
 
     #wrapper {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
         background: var(--Verypaleblue);
         font-family: 'Red Hat Display', sans-serif;
     }
@@ -49,5 +64,61 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
+        background:transparent;
+        width: 400px;
     }
+
+
     /*----------------------------------------CONTENT--------------------------------------------------*/
+
+
+    #wrapper .summary {
+        font-weight:  900;
+        color: var(--Darkblue);
+        padding-top: 20px;
+    }
+
+    #wrapper .description {
+        font-weight: 500;
+        color: var(--Desaturatedblue);
+        text-align: center;
+        line-height: 1.70em;
+    }
+
+    #wrapper #plan .selections {
+        margin-right: 30px;
+        margin-left: -20px;
+        line-height: 0.30em;
+        }
+
+    #wrapper #plan .selections .annual {
+        color: var(--Darkblue);
+    }
+
+    #wrapper #plan .selections .cost {
+        color: var(--Desaturatedblue);
+    }
+
+    #wrapper #plan .change {
+        justify-self: right;
+        color: var(--Brightblue);
+        font-weight: 500;
+    }
+
+    #wrapper .payment {
+        background: var(--Brightblue);
+        color: var(--Paleblue);
+        padding: 20px 93px;
+        border-radius: 12px;
+        box-shadow: -1px 20px 55px -20px  var(--Darkblue);
+        -webkit-box-shadow: -1px 20px 55px -20px var(--Darkblue);
+        -moz-box-shadow: -1px 20px 55px -20px var(--Darkblue)
+    }
+
+    #wrapper .cancel {
+        font-weight: 700;
+        color: var(--Desaturatedblue);
+        padding-bottom: 25px;
+    }
+
