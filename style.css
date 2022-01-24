@@ -1,0 +1,21 @@
+/*----------------------------------FOOTER-------------------------------------------------*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*---------------------------------VARIABLES AND ASSETS------------------------------------------*/
+
+    :root {
+        --Paleblue: hsl(225, 100%, 94%);
+        --Brightblue: hsl(245, 75%, 52%);
+        --Verypaleblue: hsl(225, 100%, 98%);
+        --Desaturatedblue: hsl(224, 23%, 55%);
+        --Darkblue: hsl(223, 47%, 23%);
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+    /*------------------------------MAIN STRUCTURE-----------------------------------------------*/
+
+    #general {
+        background: ;
+    }
