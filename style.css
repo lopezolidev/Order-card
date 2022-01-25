@@ -6,7 +6,18 @@
     color: var(--Darkblue);
 }
 .attribution a { 
-    color: hsl(228, 45%, 44%);
+    color: white;
+    background: var(--Darkblue);
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    border: 2px solid var(--Darkblue);
+    transition: all .4s ease-in-out;
+ }
+
+ .attribution a:hover {
+     background: transparent;
+     color: var(--Darkblue);
  }
 
 /*---------------------------------VARIABLES AND ASSETS------------------------------------------*/
@@ -14,6 +25,7 @@
     :root {
         --Paleblue: hsl(225, 100%, 94%);
         --Brightblue: hsl(245, 75%, 52%);
+        --Desaturatedbrightlblue: hsl(245, 74%, 71%);
         --Verypaleblue: hsl(225, 100%, 98%);
         --Desaturatedblue: hsl(224, 23%, 55%);
         --Darkblue: hsl(223, 47%, 23%);
@@ -22,12 +34,13 @@
 
     @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
-    /* -- 
 
     /*------------------------------MAIN STRUCTURE-----------------------------------------------*/
 
     #background {
-        background-color: var(--Verypaleblue);
+        background-color: var(--Paleblue);
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat:no-repeat;
     }
 
     #general {
@@ -43,7 +56,7 @@
         grid-template-rows: 220px 1fr;
         border-radius: 20px;
         overflow: hidden;
-        width: 450px;
+        width: 90%;
         height: 130vh;
         margin: 60px auto;
         box-shadow: -1px 22px 44px -25px rgba(31,47,86,0.75);
@@ -65,8 +78,9 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        background:transparent;
-        width: 400px;
+        background: rgb(243, 243, 243);
+        border-radius: 12px;
+        width: 85%;
     }
 
 
@@ -81,6 +95,7 @@
 
     #wrapper .description {
         font-weight: 500;
+        font-size: 1em;
         color: var(--Desaturatedblue);
         text-align: center;
         line-height: 1.70em;
@@ -106,6 +121,11 @@
         font-weight: 500;
     }
 
+    #wrapper #plan .change:hover {
+        text-decoration: none;
+        
+    }
+
     #wrapper .payment {
         background: var(--Brightblue);
         color: var(--Paleblue);
@@ -116,9 +136,33 @@
         -moz-box-shadow: -1px 20px 55px -20px var(--Darkblue)
     }
 
+    #wrapper .payment:hover {
+        background: var(--Desaturatedbrightlblue);
+        transition: all .3s ease-in-out;
+    }
+
     #wrapper .cancel {
         font-weight: 700;
         color: var(--Desaturatedblue);
         padding-bottom: 25px;
     }
 
+    #wrapper .cancel:hover {
+        color: var(--Darkblue);
+        transition: all .3s ease-in-out;
+    }
+
+    /*-----------------------------------------MEDIA QUERIES--------------------------------------*/
+
+    @media screen and (min-width: 460px) {
+        #background {
+            background-color: var(--Paleblue);
+            background-image: url(images/pattern-background-desktop.svg);
+            background-repeat:no-repeat;
+        }
+
+        #card {
+            width: min-content;
+        }
+    }  
+        
