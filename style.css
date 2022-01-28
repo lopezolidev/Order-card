@@ -41,14 +41,15 @@
         background-color: var(--Paleblue);
         background-image: url(images/pattern-background-mobile.svg);
         background-repeat:no-repeat;
+        margin: 0;
     }
 
     #general {
         font-size: 1.125em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        height: 140vh;
+        width: 100%;
+        display: grid;
+        place-items: center;
     }
 
     #card {
@@ -71,6 +72,7 @@
         align-items: center;
         background: var(--Verypaleblue);
         font-family: 'Red Hat Display', sans-serif;
+        width: 100vw;
     }
 
     #plan {
@@ -163,6 +165,10 @@
 
         #card {
             width: min-content;
+        }
+
+        #wrapper {
+            width: auto;
         }
     }  
         
