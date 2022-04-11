@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 /*----------------------------------FOOTER-------------------------------------------------*/
 .attribution { 
     font-size: 0.75em; 
@@ -83,6 +88,7 @@
         background: rgb(243, 243, 243);
         border-radius: 12px;
         width: 85%;
+        height: 15%;
     }
 
 
@@ -92,7 +98,8 @@
     #wrapper .summary {
         font-weight:  900;
         color: var(--Darkblue);
-        padding-top: 20px;
+        text-align: center;
+        width: 80%;
     }
 
     #wrapper .description {
@@ -101,6 +108,7 @@
         color: var(--Desaturatedblue);
         text-align: center;
         line-height: 1.70em;
+        width: 80%;
     }
 
     #wrapper #plan .selections {
@@ -111,6 +119,7 @@
 
     #wrapper #plan .selections .annual {
         color: var(--Darkblue);
+        margin-bottom: 1.5rem;
     }
 
     #wrapper #plan .selections .cost {
